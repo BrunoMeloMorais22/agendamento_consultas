@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/agendamentos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Agendamentos</title>
+</head>
+<body>
+
+    <div id="container">
+        <img src="/static/logo.png" alt="">
+        <p>Agende sua consulta agora mesmo. Preencha todos os espaços</p>
+    </div>
+
+    <form id="form" action="/agendamentos" method="POST">
+        <h1>Agendamentos</h1> 
+        <hr>
+        <br>
+        <i class="fa-solid fa-user"></i>
+        <input type="nome" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+
+        <i class="fa-solid fa-phone"></i>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+        <br><br>
+        <select name="consulta" id="consulta">
+            <option value="clinico Geral">Clínico Geral</option>
+            <option value="cardiologista">Cardiologista</option>
+            <option value="ortopedia">Ortopedia</option>
+            <option value="pediatria">Pediatria</option> 
+        </select>
+        <br><br>
+        <input type="date" name="" id="">
+
+        <br><br><br>
+        <input type="radio" name="maior" id="maior"> Maior de Idade 
+        <input type="radio" name="menor" id="menor"> Menor de Idade
+
+        <br><br><br>
+        
+        <input type="radio" name="para mim" id="paramim"> Para mim
+        <input type="radio" name="outrapessoa" id="outrapessoa"> Outra Pessoa <br><br>
+
+        <h3>Preferência de Contato</h3><br>
+        <input type="radio" name="whatsApp"> WhatsApp
+        <input type="radio" name="email"> Email
+        <input type="radio" name="telefone"> Telefone
+        <br><br><br>
+
+        <h3>Motivo consulta</h3><br>
+        <textarea name="adicional" id="adicional" placeholder="Digite o motivo da consulta..."></textarea> <br><br>
+
+        <button type="submit">Agendar</button>
+    </form>
+
+    <script src="/static/agendamentos.js"></script>
+</body>
+</html>

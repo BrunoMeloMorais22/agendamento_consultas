@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Consultório Médico - Healthy Life</title>
+</head>
+<body>
+    <header>
+        <h1>Healthy Life</h1>
+        <nav>
+            <a class="a" onmouseover="porcima(this)" onmouseout="sair(this)" href="/agendamentos">Agendamentos</a>
+            <a class="a" onmouseover="porcima(this)" onmouseout="sair(this)" href="/minhasconsultas">Minhas Consultas</a>
+            <a class="a" onmouseover="porcima(this)" onmouseout="sair(this)" href="#sobrenos">Sobre Nós</a>
+        </nav>
+    </header>
+
+
+    <section id="banner">
+        <div class="banner-content">
+            <h1>Saúde ao seu alcance</h1>
+            <p>Agende suas consultas de forma rápida e segura.</p>
+            <button class="pulse"><a href="/login">Login</a></button>
+            <button id="cadastro" class="pulse"><a href="/cadastro">Cadastro</a></button>
+        </div>
+    </section>
+
+    <section id="sobrenos">
+        <h2>Sobre nós</h2><br>
+        <p>Na Health Life, acreditamos que a saúde é o bem mais valioso que uma pessoa pode ter. Nosso compromisso é oferecer um atendimento médico de qualidade, acessível e humanizado para todos os nossos pacientes. 📍 Nossos diferenciais: <br><br>
+            ✅ Agendamento online fácil e rápido <br>
+            ✅ Médicos especializados e atendimento de qualidade <br>
+            ✅ Tecnologia aliada ao bem-estar <br>  
+            ✅ Atendimento humanizado e focado no paciente</p>
+    </section>
+
+    <section id="especialidades">
+        <h2>Nossas Especialidades</h2>
+        <div class="especialidade-box">
+            <div class="card">
+
+                
+                <h3> <i class="fa-solid fa-heart"></i> Cardiologia </h3> <br>
+                <p>Cuide do seu coração com os melhores especialistas.</p>
+            </div>
+            <div class="card">
+                <h3> <i class="fa-solid fa-bone"></i> Ortopedia</h3> <br>
+                <p>Tratamentos especializados para ossos e articulações.</p>
+            </div>
+            <div class="card">
+                <h3> <i class="fa-solid fa-child"></i> Pediatria</h3><br>
+                <p>Atendimento humanizado para crianças e bebês.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <h2>O que nossos pacientes dizem</h2>
+        <div class="depoimento">
+            <p>"O atendimento foi excelente, consegui agendar minha consulta rapidamente!"</p>
+            <span>- João Silva</span>
+        </div>
+        <div class="depoimento">
+            <p>"Médicos muito atenciosos e atendimento de qualidade!"</p>
+            <span>- Maria Oliveira</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Life - Criado por Bruno Melo de Morais - Todos os direitos reservados.</p><br>
+        <div class="social-icons">
+            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/bruno-morais-6b0256235/"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

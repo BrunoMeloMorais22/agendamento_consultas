@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <form id="formCadastro" method="POST">
+        <h1>Faça Seu Cadastro</h1>
+        <p>Preecha todos os campos por favor</p>
+        <br>
+
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" id="emailCadastro" name="email" placeholder="Email" required><br><br>
+
+        <i id="esquerda" class="fa-solid fa-phone"></i>
+        <input type="tel" id="telefoneCadastro" name="telefone" placeholder="Digite seu telefone" required><br><br>
+
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" id="senhaCadastro" name="senha" placeholder="Criar Senha" required><br><br>
+
+        <i class="fa-solid fa-lock"></i>
+        <input class="shake" type="password" id="confirmarsenha" name="confirmarsenha" placeholder="Digite a senha" required><br><br>
+
+        <input type="date" id="nascimento" name="nascimento" placeholder="Data de Nascimento"><br><br>
+
+        <label for="">
+            <input type="checkbox" id="termos" name="termos" required> Aceito os <a href="#">Termos de Condições</a>
+        </label>
+        <br><br>
+        <div id="feedbackCadastro"></div><br>
+
+        <a href="/login">Fazer Login</a><br><br>
+
+        <button type="submit">Fazer Cadastro</button>
+    </form>
+    <script src="/static/cadastro.js"></script>
+</body>
+</html>

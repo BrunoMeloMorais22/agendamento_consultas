@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/minhasconsultas.css">
+    <title>Minhas Consultas</title>
+</head>
+<body>
+    <header>
+        <h1>Minhas Consultas</h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/agendamentos">Agendar Consulta</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="consultas">Consultas Agendadas</h2>
+        {% if agendamentos %}
+            <ul>
+                {% for agendamento in agendamentos %}
+                    <li id="lista">
+                        <strong>Nome:</strong> {{ agendamento.nome }} <br>
+                        <strong>Email:</strong> {{ agendamento.email }} <br>
+                        <strong>Telefone:</strong> {{ agendamento.telefone }} <br>
+                        <strong>Tipo de Consulta:</strong> {{ agendamento.consulta }} <br>
+                        {% if agendamento.paramim %}
+                            <strong>Agendado para:</strong> Mim
+                        {% else %}
+                            <strong>Agendado para:</strong> Outra Pessoa
+                        {% endif %}
+                        <br><br>
+                        <button onclick="cancelar()">Cancelar consulta</button><br><br>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Nenhuma consulta agendada ainda.</p>
+        {% endif %}
+    </main>
+    <hr>
+
+    <script src="/static/minhasconsultas.js"></script>
+</body>
+</html>

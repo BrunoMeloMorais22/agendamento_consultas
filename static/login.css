@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-image: url("/static/DALL·E\ 2025-02-11\ 10.26.56\ -\ A\ modern\ and\ professional\ background\ image\ for\ a\ medical\ website\ featuring\ the\ text\ \'Health\ Life\'\ in\ a\ sleek\,\ elegant\ font.\ The\ background\ should\ have.webp") no-repeat center center/cover;;
+}
+
+#banner2 {
+    background: url('/static/DALL·E\ 2025-02-11\ 10.26.56\ -\ A\ modern\ and\ professional\ background\ image\ for\ a\ medical\ website\ featuring\ the\ text\ \'Health\ Life\'\ in\ a\ sleek\,\ elegant\ font.\ The\ background\ should\ have.webp') no-repeat center center/cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+form{
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 2px;
+    display: inline-block;
+    background: rgb(204, 204, 204);
+}
+
+form > p{
+    font-weight: 800;
+}
+
+form > label{
+    font-weight: 900;
+}
+
+form > input{
+    font-weight: 800;
+    width: 300px;
+    border: 2px solid black;
+    margin-left: 5px;
+    padding: 6px;
+}
+
+form ::placeholder{
+    margin-left: 5px;
+}
+
+form > a {
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#nascimento{
+    font-size: 16px;
+    width: 160px;
+}
+
+i{
+    font-size: 20px;
+}
+
+@media (max-width: 678px){
+    form{
+        width: 90%;
+        margin-top: 65px;
+        margin-left: 24px;
+    }
+    
+    form > input{
+        margin-top: 24px;
+    }
+
+    form > i{
+        position: absolute;
+        text-align: center; 
+        margin-left: 140px;
+    }
+
+    
+}
+form > button{
+    width: 300px;
+    padding: 5px;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    background: rgb(4, 189, 4);
+}
+
+@keyframes shake{
+    0%, 100%{ transform: translateX(0);}
+    25%{ transform: translateX(-5px);}
+    50%{ transform: translateX(5px);}
+    75%{ transform: translateX(-5px);}
+}
+
+.shake{
+    animation: shake 0.4s ease-in-out;
+}
+
+button:hover{
+    background: rgb(16, 241, 16);
+    transition: ease-out 0.1s;
+}
+
+#extra-links > a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#extra-links > a:hover{
+    text-decoration: underline;
+}
+
+

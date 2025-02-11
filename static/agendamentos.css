@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#container {
+    margin-top: -300px;
+    margin-left: -500px;
+    position: absolute;
+    width: 500px;
+}
+
+#container > img {
+    margin-top: 300px;
+    width: 400px;
+}
+
+#container > p {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+form {
+    max-width: 400px;
+    max-height: 90vh;
+    margin-left: 600px;
+    overflow-y: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form > input {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 900;
+    border: 2px solid black;
+}
+
+select {
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: black;
+    border: 2px solid black;
+}
+
+form > textarea {
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form > button {
+    background: rgb(2, 230, 2);
+    padding: 5px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form > button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #container {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #container > img, p{
+        display: none;
+    }
+    
+    form {
+        margin-left: 0;
+        width: 90%;
+        padding: 15px;
+    }
+    
+    form > textarea, form > button, form > input, select {
+        width: 100%;
+    }
+}
